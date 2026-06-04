@@ -1,0 +1,174 @@
+#1 Find the maximum of 3 numbers using max()
+'''a = int(input("enter the first no :"))
+b = int(input("enter the second no :"))
+c = int(input("enter the third no: "))
+print(max(a,b,c))
+'''
+
+#2.Find the minimum value in a list using min()
+'''a = int(input("enter the first no :"))
+b = int(input("enter the second no :"))
+c = int(input("enter the third no: "))
+print(min(a,b,c))
+'''
+
+#3. Find the length of a string using len()
+'''a = input("enter the first no :")
+print(len(a))
+'''
+
+#4. Find the sum of elements in a list using sum()
+'''c = []
+
+a = int(input("enter the first no :"))
+c.append(a)
+
+z= int(input("enter the first no :"))
+c.append(z)
+
+print(c)
+d = sum(c)
+print(d)
+'''
+
+#5. Convert float value into integer using int()
+'''
+a = float(input("enter the first no :"))
+print(int (a))
+'''
+
+#6.6 Convert integer into string using str()
+'''a = int(input("enter the first no :"))
+print(str (a))'''
+
+#7.Find power using pow()
+'''a = int(input("enter the first no :"))
+b = int(input("enter the second no :"))
+c = pow(a,b)
+print(c)
+'''
+
+#8.Sort a list using sorted()
+'''a = [9,3,4,1]
+c = sorted(a)
+print(c)
+'''
+
+#9.Find absolute value using abs()
+'''a = int(input("enter any value"))
+print(abs(a))
+'''
+
+#10. Find type of this value 5+6i
+'''print(type(5+6j))
+'''
+
+#11.Create a function to print "Hello World"
+'''def say():
+    print("Hello World")
+say()
+'''
+
+#12. Create a function to add two numbers
+'''def add():
+    a = int(input("enter the no :"))
+    b = int(input("enter the no :"))
+    print(a+b)
+add()
+'''
+
+#13 Create a function to check whether a number is even or odd
+'''def evod(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+print(evod(14))
+print(evod(13))
+'''
+
+#14 Create a function to find square of a number
+'''def sq(n):
+    print("square :", n*n)
+
+n = int(input("enter no:"))
+sq(n)
+'''
+
+#15.Create a function to display multiplication table of a number
+'''def table(n):
+   for i in range(1,11):
+    print(i, "*", n, "=", i*n)
+table(5)
+'''
+
+#16 Create a function to find factorial of a number
+'''def factbro(n):
+    fact = 1
+    for i in range(1, n + 1):
+        fact = fact * i
+    print("Factorial =", fact)
+num = int(input("Enter number: "))
+factbro(num)
+'''
+
+#17.Create a function to check whether a number is prime
+'''
+def primebro(n):
+    c = 0
+    for i in range(1, n + 1):
+        if n % i == 0:
+            c = c + 1
+    if c == 2:
+        print("Prime Number")
+    else:
+        print("Not Prime Number")
+num = int(input("Enter number: "))
+primebro(num)
+'''
+
+#18.Create a function to count vowels in a string
+'''
+def vowelbro(s):
+    c = 0
+
+    for i in s:
+        if i in "aeiouAEIOU":
+            c = c + 1
+
+    print("Vowels =", c)
+
+text = input("Enter text: ")
+vowelbro(text)
+'''
+
+#19.REverse number
+'''
+def reversebro(n):
+    rev = 0
+    while n > 0:
+        d = n % 10
+        rev = rev * 10 + d
+        n = n // 10
+    print("Reverse =", rev)
+num = int(input("Enter number: "))
+reversebro(num)
+'''
+
+
+#20 Create a function to find largest among 3 numbersReturn Function Tasks
+'''
+def largebro(a, b, c):
+    if a > b and a > c:
+        print("Largest =", a)
+    elif b > c:
+        print("Largest =", b)
+    else:
+        print("Largest =", c)
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+largebro(a, b, c)
+'''
+''
+
