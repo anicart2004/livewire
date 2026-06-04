@@ -1,0 +1,147 @@
+
+#1. find bitwise ADD
+'''a = int(input("enter the first no "))
+b = int(input("enter the first no "))
+print("the bitwise AND of two numbers", (a&b))'''
+
+#2. Find bitwise OR of two numbers
+'''a = int(input("enter the first no "))
+b = int(input("enter the first no "))
+print("the bitwise OR of two numbers", (a|b))'''
+
+#3. Find bitwise XOR of two numbers.
+'''a = int(input("enter the first no "))
+b = int(input("enter the first no "))
+print("the bitwise XOR of two numbers.", (a^b))'''
+
+#4. Find bitwise NOT of a number.
+'''a = int(input("enter the first no "))
+print("the bitwise NOT of a number ", ~a)'''
+
+#5. Input bill amount, add gst give total amount
+'''a = float(input("enter the amount no "))
+b = 18
+print("the input amount and add gst", a+((a*b)/100))'''
+
+#6. Input 5 person weight find average 
+'''a = float(input("the 1st person weight: "))
+b = float(input("the 2st person weight: "))
+c = float(input("the 3st person weight: "))
+d = float(input("the 4st person weight: "))
+e = float(input("the 5st person weight: "))
+x = (a+b+c+d+e)/5
+print("5 person weight find average", x)'''
+
+#7.Check whether a number is even using bitwise operator.
+'''a = int(input("enter the even no: "))
+if((a&1)==0):
+     print("even bro")
+else:
+     print("odd bro")
+'''
+
+#8. Input a number find it square
+'''a = int(input("enter the no to square: "))
+print("power no is: ", a ** 2)
+'''
+
+#9. Input a number find its cube
+'''a = int(input("enter the no to cube: "))
+print("power no is: ", a ** 3)
+'''
+
+#10. Swap two numbers using XOR operator.
+'''a = 1
+b = 2
+
+a = a^b
+b = a^b
+a = a^b
+
+print("a", b)
+print ("b", a)
+'''
+
+#11. Compare two numbers and print whether they are equal.
+'''a = int(input("enter first number: "))
+b = int(input("enter second number: "))
+
+if (a==b):
+        print("equal")
+else:
+    print("not equal")
+'''
+
+#12.Check whether first number is greater than second number.
+'''a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+if (a>b):
+    print("this is greater")
+else:
+    print("wrong bro !")
+'''
+
+#13. Check whether a number is less than 50.
+'''a = int(input("enter the number :"))
+if (a>50):
+        print("greater ")
+else:
+    print("less")'''
+
+#14.Compare two numbers using >= operator. 
+'''a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+if (a>=b):
+    print("this is greater and equal")
+else:
+    print("no equal bro !")'''
+ 
+#15. whether two values equal are not.
+'''a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+if a==b:
+        print("equal")
+else:
+        print("not equal")'''
+
+#16. check whether a number is exists are not in a list
+'''x = [1,2,3,4,5]
+print("list = 1,2,3,4,5")
+v = int(input("Enter first number: "))
+if v in x:
+        print("yes")
+else:
+        print("no")'''
+
+#17.calculate the compound interest
+'''p = float(input("enter the principal amount "))
+r = float(input("enter the increase of rate "))
+t = float(input("enter the time peroid "))
+a = p*(1+r/100)**t
+c = a-p
+print("total amount :", a)
+print("compound interest :", c)'''
+
+#18.verify if number is in membership or not
+'''a = [2,3,4,5,6]
+print("2,3,4,5,6")
+x = int(input("write given number :"))
+if x in a:
+        print("verified")
+else:
+        print("not verified")
+'''
+
+#19. create two variables with same value  and check using is
+'''a = 1
+b = 1
+c = a is b
+print("check using is ", c)
+'''
+
+#20. assign one variable to another and check is not
+'''a = 10
+b = a
+print(a is not b)
+'''
