@@ -1,0 +1,100 @@
+#1. Check if a number is even or odd.
+'''a = int(input("enter the number even or odd :"))
+if (a%2)==0:
+    print("even ")
+else:
+    print("odd")'''
+
+#2. Write a program to check if a number is positive, negative if not print zero.
+'''a = int(input("enter the number: "))
+if a < 0:
+    print("negative ")
+elif a == 0:
+    print("neutral ")
+else:
+    print("positive" ) 
+'''
+
+#3. Check if the number is divisible by both 2 and 5, and display the result.
+'''a = int(input("enter the number divisible by 2 and 5 : "))
+if (a % 2)==0 and (a % 5)==0:
+    print("yes ")
+else:
+    print("no")
+'''
+
+#4. Input marks of a student with a 5 grades
+'''a = int(input("enter the marks out of 600 "))
+if a>=500 and a<=600:
+    print("A grade❤")
+elif a>=400:
+    print("b grade●◡●")
+elif a>=300:
+    print("c grade✌")
+elif a>=200:
+    print("d grade ")
+elif a>=1:
+    print("e grade ")
+else:
+    print("should be less than 600 ")
+'''
+
+#5. Input a year and check if it’s a Leap Year using nested conditions:
+#If divisible by 4 → check divisible by 100 → then check divisible by 400.
+
+'''leap = int(input("enter the leap year "))
+if (leap%4)==0:
+           print("leap")
+elif leap % 100:
+    print("not a leap")
+elif leap % 400:
+    print("leap")
+else:
+    print("not a leap")'''
+
+#6.Print numbers from 1 to 10.
+'''n = int(input("enter te number:"))
+for i in range (1,11,n):
+    print(i)'''
+
+#7. Print numbers from 1 to 10 and square them.
+'''n = int(input("enter te number:"))
+for i in range (1,11,1):
+    print(i**2)'''
+           
+#8. Print numbers from 10 to 1 in reverse order
+'''for i in range (10,0,-1):
+    print(i )'''
+
+#9. Input age → classify as Child (0–12), Teen (13–19), Adult (20–59), Senior (60+).
+'''age = int(input("enter the age: "))
+if age >= 0 and age <=12:
+    print("child")
+elif age >=13 and age<=19:
+    print("teen")
+elif age >=20 and age<=59:
+    print ("adult")
+else:
+    print("senior")
+'''
+
+#10. Write a program that takes a number as input and checks if its cube is greater than 100. Display whether it is above or below/equal to 100
+'''a = int(input("enter the number: "))
+c = a ** 3
+if c < 100:
+        print("its below of 100 see", c)
+elif c >100:
+        print("its above of 100 see", c)
+else:
+    print("redo")
+'''
+#11.Login system:
+'''a = input("the username : ")
+b = input("the password : ")
+if a == "alwin" and b == "jones":
+    print("login sucessfully ")
+else:
+    print("invalid")
+'''
+
+#12.Check if a character is a vowel or consonant.
