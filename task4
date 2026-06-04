@@ -1,0 +1,99 @@
+#1.spy
+'''n = int(input("enter the number : "))
+t = n
+sums = 0
+prod = 1
+
+while t>0:
+    d = t%10
+    sums += d
+    prod *= d
+    t//=10
+if sums==prod:
+    print("spy no" )
+else:
+    print("not spy")
+'''
+
+#2.harsed no:
+'''n = int(input("enter the number : "))
+p=n % 10
+z=n //10
+a=p+z
+if n%a==0:
+    print("yes harsed:")
+else:
+    print("no")
+'''
+
+#3.armstrong
+'''n = int(input("enter the number upto 3 digit : "))
+q = n%10
+w = n//10
+e = w%10
+x = w//10
+
+a = x**3
+b = e**3
+c = q**3
+
+print(a,b,c ,"is ",a+b+c)
+
+if a+b+c == n:
+    print("its armstrong bro ")
+else:
+    print("no arm-")
+'''
+
+#4. palindrome
+'''a =(input("enter a palindrom "))
+b = a[::-1]
+if a==b:
+    print("palindrome")
+else:
+    print("not")
+'''
+#5. fibonacii
+'''
+n = int(input("enter limit : "))
+a = 0
+b = 1
+for i in range(n):
+    print(a)
+    c = a + b
+    a = b
+    b = c
+'''
+
+
+#10.patterns 
+'''
+n = 5
+for i in range(n):
+    for j in range(n):
+        print("*", end=" ")
+    print() 
+'''
+#8. automorphic number
+'''n = int(input("enter number : "))
+sq = n * n
+no = len(str(n))
+if sq % (10**no) == n:
+    print("automorphic")
+else:
+    print("not automorphic")
+'''
+
+#10. letter
+'''    
+n = 5
+for i in range(n):
+    for j in range(n):
+        if j==0 or j==n-1 or i==0 or i==2:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+'''
+
+    
