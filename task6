@@ -165,5 +165,147 @@ numbers = (10, 20, 30, 40, 50)
 
 for i in numbers:
     print(i)
+''
+
+#set
+
+# 1 Create a set of numbers
 '''
-```
+numbers = {10, 20, 30, 40, 50}
+print(numbers)
+'''
+
+# 2 Add elements into set
+'''
+numbers = {10, 20, 30, 40, 50}
+
+numbers.add(60)
+print(numbers)
+'''
+
+# 3 Remove elements from set
+'''
+numbers = {10, 20, 30, 40, 50}
+
+numbers.remove(30)
+print(numbers)
+'''
+
+# 4 Find union of two sets
+'''
+set1 = {10, 20, 30}
+set2 = {30, 40, 50}
+
+print(set1.union(set2))
+'''
+
+# 5 Find intersection of two sets
+'''
+set1 = {10, 20, 30}
+set2 = {30, 40, 50}
+
+print(set1.intersection(set2))
+'''
+
+# 6 Find difference between sets
+'''
+set1 = {10, 20, 30}
+set2 = {30, 40, 50}
+
+print(set1.difference(set2))
+'''
+
+# 7 Remove duplicates from list using set
+'''
+numbers = [10, 20, 20, 30, 40, 40, 50]
+
+unique = set(numbers)
+print(unique)
+'''
+
+# 8 Check subset and superset
+'''
+set1 = {10, 20}
+set2 = {10, 20, 30, 40}
+
+print(set1.issubset(set2))
+print(set2.issuperset(set1))
+'''
+
+# 9 Find unique vowels in string
+'''
+text = "good afternoon everyone"
+
+vowels = set()
+
+for i in text:
+    if i in "aeiou":
+        vowels.add(i)
+
+print(vowels)
+'''
+
+# 10 Convert list into set
+'''
+numbers = [10, 20, 30, 40, 50]
+
+s = set(numbers)
+print(s)
+'''
+
+
+#dictonary
+# 1 Create a student dictionary with name and marks
+'''
+student = {
+    "name": "alwin",
+    "marks": 85
+}
+
+print(student)
+'''
+
+# 2 Add new key-value pair
+'''
+student = {
+    "name": "alwin",
+    "marks": 85
+}
+
+student["city"] = "Salem"
+print(student)
+'''
+
+# 3 Update dictionary value
+'''
+student = {
+    "name": "alwin",
+    "marks": 85
+}
+
+student["marks"] = 95
+print(student)
+'''
+
+# 4 Delete an item from dictionary
+'''
+student = {
+    "name": "alwin",
+    "marks": 85
+}
+
+del student["marks"]
+print(student)
+'''
+
+# 5 Print all keys and values
+'''
+student = {
+    "name": "alwin",
+    "marks": 85,
+    "city": "Salem"
+}
+
+for key, value in student.items():
+    print(key, ":", value)
+'''
