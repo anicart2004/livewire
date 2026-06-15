@@ -91,3 +91,79 @@ else:
     print("Element Not Found")
 '''
 ```
+#turple
+```python
+# 1 Create a tuple with 5 numbers
+'''
+numbers = (10, 20, 30, 40, 50)
+print(numbers)
+'''
+
+# 2 Access tuple elements using indexing
+'''
+numbers = (10, 20, 30, 40, 50)
+
+print(numbers[0])
+print(numbers[3])
+'''
+
+# 3 Find length of tuple
+'''
+numbers = (10, 20, 30, 40, 50)
+
+print(len(numbers))
+'''
+
+# 4 Count occurrence of an element
+'''
+numbers = (10, 20, 30, 20, 50)
+
+print(numbers.count(20))
+'''
+
+# 5 Find index position of element
+'''
+numbers = (10, 20, 30, 40, 50)
+
+print(numbers.index(30))
+'''
+
+# 6 Slice a tuple
+'''
+numbers = (10, 20, 30, 40, 50)
+
+print(numbers[1:4])
+'''
+
+# 7 Convert tuple into list
+'''
+numbers = (10, 20, 30, 40, 50)
+
+mylist = list(numbers)
+print(mylist)
+'''
+
+# 8 Convert list into tuple
+'''
+mylist = [10, 20, 30, 40, 50]
+
+numbers = tuple(mylist)
+print(numbers)
+'''
+
+# 9 Find maximum and minimum value
+'''
+numbers = (10, 20, 30, 40, 50)
+
+print("Maximum:", max(numbers))
+print("Minimum:", min(numbers))
+'''
+
+# 10 Iterate tuple using loop
+'''
+numbers = (10, 20, 30, 40, 50)
+
+for i in numbers:
+    print(i)
+'''
+```
