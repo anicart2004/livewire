@@ -1,0 +1,93 @@
+#list
+# 1 Create a list of 5 student names
+'''
+students = ["alwin", "rasi", "rohit", "why", "good"]
+print(students)
+'''
+
+# 2 Add a new name to the list
+'''
+students = ["alwin", "rasi", "rohit", "why", "good"]
+students.append("ajay")
+print(students)
+'''
+
+# 3 Remove a student name from the list
+'''
+students = ["alwin", "rasi", "rohit", "why", "good"]
+students.remove("rohit")
+print(students)
+'''
+
+# 4 Print all elements using loop
+'''
+students = ["alwin", "rasi", "rohit", "why", "good"]
+
+for i in students:
+    print(i)
+'''
+
+# 5 Find largest and smallest number in list
+'''
+numbers = [10, 25, 5, 40, 15]
+
+print("Largest:", max(numbers))
+print("Smallest:", min(numbers))
+'''
+
+# 6 Count even and odd numbers in list
+'''
+numbers = [1, 2, 3, 4, 5, 6]
+
+even = 0
+odd = 0
+
+for i in numbers:
+    if i % 2 == 0:
+        even += 1
+    else:
+        odd += 1
+
+print("Even:", even)
+print("Odd:", odd)
+'''
+
+# 7 Reverse a list
+'''
+numbers = [10, 20, 30, 40, 50]
+
+numbers.reverse()
+print(numbers)
+'''
+
+# 8 Sort a list in ascending order
+'''
+numbers = [40, 10, 30, 20, 50]
+
+numbers.sort()
+print(numbers)
+'''
+
+# 9 Find sum and average of list elements
+'''
+numbers = [10, 20, 30, 40, 50]
+
+total = sum(numbers)
+average = total / len(numbers)
+
+print("Sum:", total)
+print("Average:", average)
+'''
+
+# 10 Search an element in list
+'''
+numbers = [10, 20, 30, 40, 50]
+
+n = 30
+
+if n in numbers:
+    print("Element Found")
+else:
+    print("Element Not Found")
+'''
+```
