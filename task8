@@ -1,0 +1,155 @@
+#1.Write a Python function to print all even numbers from 1 to 50 without using arguments.
+'''def even():
+    for i in range(0,51,2):
+                   print(i)
+even()
+'''
+
+#2.Write a Python function that takes two numbers as arguments and prints their sum.
+'''def add(a,b):
+    print(a+b)
+add(5,6)
+'''
+'''
+def add(a):
+  t=sum(a)
+  return t
+t=add([1,2])
+print('total',t)
+'''
+
+#3.Write a function that returns multiple values (sum, average,minimum and maximum) from a list.
+'''
+def values(i):
+    t = sum(i)
+    s = len(i)
+    z = t/s
+    mins = min(i)
+    maxs = max(i)
+    return t,s,z,mins,maxs
+a,b,c,d,e=values([1,2,3,4,5])
+print(a,"its sum")
+print(b, "its len")
+print(c, "its aver")
+print(d, "min ")
+print(e, "max")
+'''
+
+#4.4. Write a Python function to find the largest of three numbers using a return statement.
+'''
+def large(i):
+    maxs = max(i)
+    return maxs
+a = large([3,5,6])
+print(a)
+'''
+
+#5.Write a function using positional and keyword arguments together to display student details.
+'''
+def pos(game,score,team):
+    print('game', game)
+    print('score', score)
+    print('team', team)
+pos(score='1', game='chess', team='bai')
+'''
+
+#6. Write a Python function using positional arguments to calculate the area of a rectangle.
+'''
+def rec(l,b):
+    return l * b
+a = rec(2,2)
+print('rectangle value',a)
+
+'''
+#7.Write a Python function with a default argument to calculate simple interest where the default rate is 5%.
+'''
+def inte(p,t,r=5):
+    return (p*r*t)/100
+p = int(input("enter the principle"))
+t = int(input("enter the time "))
+
+print('simple',inte(p,t))
+'''
+
+#8.Write a Python function with a default argument to find the power of a number where the default exponent is 2
+'''
+def expo (v, e=2):
+    return v**2
+v = int(input("enter expo"))
+print("value is ",expo(v))
+'''
+
+#9.9. Write a Python function using '*args' to find the sum of any number of values.
+'''
+def sums (*datas):
+    return sum(datas)
+print("show", sums(1,2,3))
+'''
+
+#10.Write a Python function using '*args' to find the largest value among multiple inputs.
+'''
+def sums (*datas):
+    return max(datas)
+print("show", sums(1,2,3))
+'''
+
+#11.11. Write a Python function using '**kwargs' to displays all key-value pairs
+'''
+def shows(**data):
+    print(data)
+shows(name="Alwin", age=21)
+'''
+
+#12.Write a Python function using '**kwargs' to display employee details.
+'''def emp(**data):
+    for k in data:
+        print(data, " : ", k)
+
+emp(name="bala", age=45, salary=100)
+'''
+#13.Write a lambda function to find the square of a number.
+'''square = lambda x: x * x
+
+print(square(5))
+'''
+
+#14.Write a lambda function to find the larger of two numbers.
+lam = lambda x,y: x if x > y else y
+print(lam(9,4))
+
+
+#15.map()
+'''celsius=[0,20,30,0]
+fahrenheit= list(map(lambda x:(x*9/5)*35,celsius))
+print(fahrenheit)'''
+
+#16. square
+'''n=[1,2,3,4]
+result =list(map(lambda x:x*2,n))
+print(result)'''
+
+#17. using filter() even number
+'''n=[1,2,3,4,5,6]
+even=list(filter(lambda x:x%2==0,n))
+print(even)'''
+
+#18. using filter() greater than 100
+'''n=[30,50,99,200,100]
+result=list(filter(lambda x:x>100,n))
+print(result)'''
+
+#19. power of a number
+'''def power(num,expo=2):
+    print(num**expo)
+power(2)'''
+
+#20. using recursive() create fibonacci series
+def fibonacci(n):
+    a=0
+    b=1
+    for i in range(n):
+        print(a,end="")
+        c=a+b
+        a=b
+        b=c
+fibonacci(10)
